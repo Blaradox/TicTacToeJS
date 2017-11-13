@@ -4,7 +4,10 @@
   "description": "command line TicTacToe",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "start": "node index.js",
+    "test": "mocha",
+    "unit": "mocha",
+    "lint": "eslint *.js && eslint */*.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,8 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "prompt": "^1.0.0"
   }
 }
